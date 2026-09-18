@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Signaler un incident</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #000;
+    margin: 20px;
+    background: #fff;
+  }
+  h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  ul.breadcrumb {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  ul.breadcrumb li {
+    margin: 2px 0;
+  }
+  ul.breadcrumb a {
+    color: #0645AD;
+    text-decoration: underline;
+  }
+  fieldset {
+    border: 1px solid #999;
+    padding: 15px;
+    max-width: 520px;
+  }
+  legend {
+    padding: 0 5px;
+  }
+  .field {
+    margin-bottom: 15px;
+  }
+  .field label {
+    display: block;
+    margin-bottom: 4px;
+  }
+  select, input[type="text"], input[type="email"] {
+    font-family: inherit;
+    font-size: 13px;
+    padding: 2px 4px;
+  }
+  textarea {
+    width: 250px;
+    height: 70px;
+    font-family: inherit;
+    font-size: 13px;
+  }
+  fieldset.priorite {
+    margin-top: 5px;
+  }
+  fieldset.priorite div {
+    margin: 4px 0;
+  }
+  button {
+    font-family: inherit;
+    font-size: 13px;
+    padding: 3px 10px;
+  }
+  footer {
+    margin-top: 30px;
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Signaler un incident</h1>
+
+  <ul class="breadcrumb">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="secteurs.html">Secteurs</a></li>
+    <li><a href="signaler un incident.html">Signaler un incident</a></li>
+  </ul>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Déclaration d'incident</legend>
+
+      <div class="field">
+        <label for="secteur">Secteur concerné</label>
+        <select id="secteur" name="secteur">
+          <option value="savane">Savane</option>
+          <option value="jungle">Jungle</option>
+          <option value="banquise">Banquise</option>
+          <option value="marecage">Marécage</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="sujet">Sujet</label>
+        <input type="text" id="sujet" name="sujet" size="30">
+      </div>
+
+      <div class="field">
+        <label for="description">Description</label>
+        <textarea id="description" name="description"></textarea>
+      </div>
+
+      <fieldset class="priorite">
+        <legend>Priorité</legend>
+        <div>
+          <input type="radio" id="basse" name="priorite" value="basse">
+          <label for="basse" style="display:inline">Basse</label>
+        </div>
+        <div>
+          <input type="radio" id="moyenne" name="priorite" value="moyenne">
+          <label for="moyenne" style="display:inline">Moyenne</label>
+        </div>
+        <div>
+          <input type="radio" id="haute" name="priorite" value="haute">
+          <label for="haute" style="display:inline">Haute</label>
+        </div>
+      </fieldset>
+
+      <div class="field" style="margin-top:15px;">
+        <label for="email">Votre adresse électronique</label>
+        <input type="email" id="email" name="email" size="20">
+      </div>
+
+      <button type="submit">Envoyer la déclaration</button>
+    </fieldset>
+  </form>
+
+  <footer>
+    Parc animalier de Val-Sorin — route des Étangs, Val-Sorin
+  </footer>
+
+</body>
+</html>
