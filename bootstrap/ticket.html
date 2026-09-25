@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signaler un incident — Parc animalier de Val-Sorin</title>
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <header>
+    <h1>Signaler un incident</h1>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="secteurs.html">Secteurs</a></li>
+        <li><a href="secteur.html">La savane</a></li>
+        <li><a href="ticket.html">Signaler un incident</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="traiter_ticket.php" method="post">
+      <fieldset>
+        <legend>Déclaration d'incident</legend>
+
+        <p>
+          <label for="secteur">Secteur concerné</label>
+          <select name="secteur" id="secteur" required>
+            <option value="">Choisir un secteur</option>
+            <option value="SAV">Savane</option>
+            <option value="TRO">Forêt tropicale</option>
+            <option value="BAN">Banquise</option>
+            <option value="FER">Ferme pédagogique</option>
+            <option value="VOL">Grande volière</option>
+            <option value="AQU">Aquarium</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="sujet">Sujet</label>
+          <input type="text" name="sujet" id="sujet" maxlength="120" required>
+        </p>
+
+        <p>
+          <label for="description">Description</label>
+          <textarea name="description" id="description" rows="6" required></textarea>
+        </p>
+
+        <fieldset>
+          <legend>Priorité</legend>
+          <p>
+            <input type="radio" name="priorite" id="priorite-basse" value="basse" required>
+            <label for="priorite-basse">Basse</label>
+          </p>
+          <p>
+            <input type="radio" name="priorite" id="priorite-moyenne" value="moyenne">
+            <label for="priorite-moyenne">Moyenne</label>
+          </p>
+          <p>
+            <input type="radio" name="priorite" id="priorite-haute" value="haute">
+            <label for="priorite-haute">Haute</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="mel">Votre adresse électronique</label>
+          <input type="email" name="mel" id="mel" required>
+        </p>
+
+        <p><button type="submit">Envoyer la déclaration</button></p>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>Parc animalier de Val-Sorin — route des Étangs, Val-Sorin</p>
+  </footer>
+</body>
+</html>
