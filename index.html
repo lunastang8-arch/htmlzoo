@@ -1,52 +1,46 @@
-<!-- EXEMPLE DE SYNTAXE sur un autre domaine (cinema de quartier) -- a
-transposer, pas a copier -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="index.css">
- <title>Parc animalier de Val-Sorin</title>
-  <nav aria-label="Menu principal">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parc animalier de Val-Sorin</title>
+  <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
- <header>
- <h1>Parc animalier de Val-Sorin</h1>
-   <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="secteurs.html">Secteurs</a></li>
-            <li><a href="Signaler un incident.html">Signaler un incident</a></li>
-        </ul>
+  <header>
+    <h1>Parc animalier de Val-Sorin</h1>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="secteurs.html">Secteurs</a></li>
+        <li><a href="secteur.html">La savane</a></li>
+        <li><a href="ticket.html">Signaler un incident</a></li>
+      </ul>
     </nav>
- </nav>
- </header>
- <h2>Le parc</h2>
- <table>
- Le parc animalier de Val-Sorin accuille trente-deux animaux repartis en six secteurr, de la grande plaine de savane au tunnel
- <br> de l'aquarium. Les soigneurs y assurent les soins quotidiens ; les incidents rencontres sur le terrain sont declares depuis ce site.
- </table>
- <h3>Les six secteurs</h3>
-<ul>
-            <li><a href="secteur.html#SAV">Savane</a></li>
-            <li><a href="secteurs.html#TRO">Foret tropical</a></li>
-            <li><a href="secteurs.html#BAN">Banquise</a></li>
-            <li><a href="secteurs.html#FER">Ferme pedagogique</a></li>
-            <li><a href="secteurs.html#VOL">Grande voliere</a></li>
-            <li><a href="secteurs.html#AQU">aquarium</a></li>
-</ul><br>
-<h1>Savane</h1>
-<img src="data/images/savane.svg" width="300">
-<br>
-<table> Grande plaine herbeuse de trois hectares, girafes, zèbre et austruches en cohabitation</table>
-<h1>Les animaux du secteur</h1>
-<ul>
-            <li><a href="secteur.html#SAV">zara</a></li>
-            <li><a href="secteurs.html#TRO">nino</a></li>
-            <li><a href="secteurs.html#BAN">Pablo</a></li>
-            <li><a href="secteurs.html#FER">Iris</a></li>
-            <li><a href="secteurs.html#VOL">Gaston</a></li>
-            <li><a href="secteurs.html#AQU">Tembo</a></li>
-</ul><br>
- </main>
+  </header>
+
+  <main>
+    <h2>Le parc</h2>
+    <p>
+      Le Parc animalier de Val-Sorin accueille trente-deux animaux répartis en six
+      secteurs, de la grande plaine de savane au tunnel de l'aquarium. Les soigneurs
+      y assurent les soins quotidiens ; les incidents rencontrés sur le terrain sont
+      déclarés depuis ce site.
+    </p>
+
+    <h2>Les six secteurs</h2>
+    <ul class="cartes">
+      <li><a href="secteur.html">Savane</a></li>
+      <li><a href="secteurs.html#TRO">Forêt tropicale</a></li>
+      <li><a href="secteurs.html#BAN">Banquise</a></li>
+      <li><a href="secteurs.html#FER">Ferme pédagogique</a></li>
+      <li><a href="secteurs.html#VOL">Grande volière</a></li>
+      <li><a href="secteurs.html#AQU">Aquarium</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>Parc animalier de Val-Sorin — route des Étangs, Val-Sorin</p>
+  </footer>
 </body>
 </html>

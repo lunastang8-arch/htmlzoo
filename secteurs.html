@@ -1,32 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les secteurs — Parc animalier de Val-Sorin</title>
+  <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-     <h2>Les secteurs du parc</h2>
- <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="secteurs.html">Secteurs</a></li>
-            <li><a href="Signaler un incident.html">Signaler un incident</a></li>
-        </ul>
-  <table>
-     Surface, capacité et effectif des six secteurs
-<table>
-<tr><th scope="col">Secteur</th><th scope="col">Surface(m2)</th><th
-scope="col">Capacité</th><th scope="col">Animaux</tr>
-</thead>
-<tbody>
-<tr id="SAV"><td>Savane</td><td>30000</td><td>34</td><td>7</tr></tr>
-<tr id="TRO"><td>Forêt tropicale</td><td>4200</td><td>27</td><td>7</tr></tr>
-<tr id="BAN"><td>Banquise</td><td>1800</td><td>22</td><td>5</tr></tr>
-<tr id="FER"><td>Ferme pédagogique</td><td>2500</td><td>40</td><td>5</tr></tr>
-<tr id="VOL"><td>Grande voliere</td><td>1500</td><td>45</td><td>4</td></tr>
-<tr id="AQU"><td>Aquarium</td><td>900</td><td>300</td><td>4</td></tr>
-</tbody>
-</table>
-<p>Parc animalier de Val-Sorin -- route des Etangs. Val-Sorin</p>
+  <header>
+    <h1>Les secteurs du parc</h1>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="secteurs.html">Secteurs</a></li>
+        <li><a href="secteur.html">La savane</a></li>
+        <li><a href="ticket.html">Signaler un incident</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <table>
+      <caption>Surface, capacité et effectif des six secteurs</caption>
+      <thead>
+        <tr>
+          <th scope="col">Secteur</th>
+          <th scope="col">Surface (m²)</th>
+          <th scope="col">Capacité</th>
+          <th scope="col">Animaux</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="SAV">
+          <td>Savane</td>
+          <td>30000</td>
+          <td>34</td>
+          <td>7</td>
+        </tr>
+        <tr id="TRO" class="paire">
+          <td>Forêt tropicale</td>
+          <td>4200</td>
+          <td>27</td>
+          <td>7</td>
+        </tr>
+        <tr id="BAN">
+          <td>Banquise</td>
+          <td>1800</td>
+          <td>22</td>
+          <td>5</td>
+        </tr>
+        <tr id="FER" class="paire">
+          <td>Ferme pédagogique</td>
+          <td>2500</td>
+          <td>40</td>
+          <td>5</td>
+        </tr>
+        <tr id="VOL">
+          <td>Grande volière</td>
+          <td>1500</td>
+          <td>45</td>
+          <td>4</td>
+        </tr>
+        <tr id="AQU" class="paire">
+          <td>Aquarium</td>
+          <td>900</td>
+          <td>300</td>
+          <td>4</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>Parc animalier de Val-Sorin — route des Étangs, Val-Sorin</p>
+  </footer>
 </body>
 </html>
